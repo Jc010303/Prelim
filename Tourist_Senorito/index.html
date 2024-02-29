@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohol's Tourist Spot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+document.addEventListener( 'DOMContentLoaded', function () {
+  var main = new Splide( '#main-carousel', {
+    type      : 'fade',
+    rewind    : true,
+    pagination: false,
+    arrows    : false,
+  } );
+
+  var thumbnails = new Splide( '#thumbnail-carousel', {
+    fixedWidth  : 100,
+    fixedHeight : 60,
+    gap         : 10,
+    rewind      : true,
+    pagination  : false,
+    isNavigation: true,
+    breakpoints : {
+      600: {
+        fixedWidth : 60,
+        fixedHeight: 44,
+      },
+    },
+  } );
+
+  main.sync( thumbnails );
+  main.mount();
+  thumbnails.mount();
+});
+    
+</script>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#" class="logo">Bohol Tourist Spot</a>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#spot">Spot</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>  
+            </ul>
+            <i class='bx bx-search' id="search-icon"></i>
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here....">
+            </div>
+        </div>
+    </header>
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home-text" data-aos="fade-right">
+            <h1>Let's Make Your <br>Best Trip <span>AMAZING</span> </h1>
+            <p>Leisure travelers can once again visit Bohol<br>all welcoming tourists</p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+    </section>
+    <!-- spot -->
+    <section class="spot" id="spot">
+        <div class="heading" data-aos="fade-down">
+            <span>AMAZING VIEWS</span>
+            <h2>Explore the various attractions in Bohol</h2>
+            <p>One of the top Visayas tourist spots and top tourist destinations in the Philippines </p>
+        </div>
+        <div class="spot-container container">
+            <div class="box" data-aos="fade-right">
+                <a href="https://www.travelandleisure.com/attractions/landmarks-monuments/chocolate-hills-philippines"><img src="img/Chocolate-Hills.jpg" alt=""></a>
+                <a href="https://www.travelandleisure.com/attractions/landmarks-monuments/chocolate-hills-philippines"><h2>Chocolate Hills</h2></a>
+            </div>
+            <div class="box" data-aos="fade-right">
+                <a href="https://bohol-guide.com/magazine/panglao-beaches-philippines/"><img src="img/beach.jpg" alt=""></a>
+                <a href="https://bohol-guide.com/magazine/panglao-beaches-philippines/"><h2>Beaches of Panglao Island</h2></a>
+            </div>
+            <div class="box" data-aos="fade-left">
+                <a href="http://www.boholtourismph.com/hinagdanan-cave/"><img src="img/hinagdanan.jpg" alt=""></a>
+                <a href="http://www.boholtourismph.com/hinagdanan-cave/"><h2>Hinagdanan Cave </h2></a>
+            </div>
+            <div class="box" data-aos="fade-left">
+                <a href="https://www.bohol-philippines.com/loboc-river.html"><img src="img/Loboc-River.jpg" alt=""></a>
+                <a href="https://www.bohol-philippines.com/loboc-river.html"><h2>Loboc River</h2></a>
+            </div>
+            <div class="box" data-aos="fade-right">
+                <a href="https://www.jonnymelon.com/tarsier-conservation-area-bohol/"><img src="img/tars1.jpg" alt=""></a>
+                <a href="https://www.jonnymelon.com/tarsier-conservation-area-bohol/"><h2>Tarsiers</h2></a>
+            </div>
+            <div class="box" data-aos="fade-left">
+                <a href="https://www.aroundbohol.com/island-hopping-in-bohol/"><img src="img/island.jpg" alt=""></a>
+                <a href="https://www.aroundbohol.com/island-hopping-in-bohol/"><h2>Go Island-Hopping</h2></a>
+            </div>
+        </div>
+    </section>
+     <!-- gallery -->
+     <section class="gallery" id="gallery">
+     <div class="container">
+        <div id="main-carousel" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="img/Ali1.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/Anda1.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/bg1.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/Ali1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Anda1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/bg1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Ali1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Anda1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/bg1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Ali1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Anda1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/bg1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Ali1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Anda1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/bg1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Ali1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Anda1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/bg1.jpg" alt="">
+                  </li>
+              </ul>
+        </div>
+      </div>
+    <section
+          id="thumbnail-carousel"
+          class="splide"
+          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="img/Ali1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/Anda1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/bg1.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="img/Ali1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Anda1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/bg1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Ali1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Anda1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/bg1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Ali1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Anda1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/bg1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Ali1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Anda1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/bg1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Ali1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/Anda1.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/bg1.jpg" alt="">
+                    </li>
+            </ul>
+        </div>
+</section>
+</section>
+</div>
+    <!-- about -->
+    <section class="about container" id="about">
+       <div class="about-img" data-aos="fade-down">
+         <img src="img/Bohol.jpg" alt="">
+       </div>
+        <div class="about-text" data-aos="fade-up">
+            <span>About Us</span>
+            <h2>Bohol is one of the best places to <br> visit in the Philippines</h2>
+            <p>This province is home to some of the country’s most iconic natural attractions 
+                including the World-famous Chocolate Hills and the wide-eyed Philippine Tarsier, 
+                one of the smallest monkeys in the World. Bohol is also known for its many 
+                white-sand beaches and beautiful islands.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">BOHOL_Spot</a>
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#home">Home</a>
+                <a href="#spot">Spot</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+
+            </div>
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>John Christian Florentino</p>
+                <p>Globe-09123456789</p>
+                <p>Smart-09124563456</p>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: false,
+      });
+    </script>
+</body>
+</html>
